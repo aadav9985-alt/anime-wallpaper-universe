@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anime Wallpaper Universe</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 40px 8%;
+      overflow: hidden;
+
+      /* Nagi image */
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,0.96),
+          rgba(0,0,0,0.65),
+          rgba(0,0,0,0.35)
+        ),
+        url("nagi.jpg");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(
+          circle at 75% 50%,
+          rgba(255,0,0,0.35),
+          transparent 35%
+        );
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+    }
+
+    .tag {
+      color: #ff2020;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 9vw, 95px);
+      line-height: 0.92;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      text-shadow: 0 0 30px rgba(255,0,0,0.5);
+    }
+
+    h1 span {
+      color: #ff1515;
+    }
+
+    .description {
+      color: #d0d0d0;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .primary {
+      background: #e60000;
+      color: white;
+      box-shadow: 0 0 25px rgba(255,0,0,0.35);
+    }
+
+    .primary:hover {
+      background: #ff2929;
+      transform: translateY(-3px);
+    }
+
+    .secondary {
+      color: white;
+      border: 1px solid #555;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .secondary:hover {
+      border-color: #ff2020;
+      transform: translateY(-3px);
+    }
+
+    .wallpapers {
+      padding: 70px 8%;
+      background: #070707;
+    }
+
+    .wallpapers h2 {
+      font-size: 38px;
+      margin-bottom: 30px;
+    }
+
+    .wallpapers h2 span {
+      color: #ff1515;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+      min-height: 200px;
+      border-radius: 12px;
+      border: 1px solid #252525;
+      background: #101010;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7
